@@ -5,7 +5,10 @@
 - [ ] Traspasos
 - [ ] Precios
 
-## Bloque PRD
+## Referencia PRD (obligatorio)
+- PRD: `prd/<equipo>/PRD.md`
+- Sección PRD:
+- Criterio de aceptación PRD cubierto:
 
 ## Cambios técnicos
 
@@ -13,5 +16,9 @@
 - [ ] Build OK
 - [ ] Caso feliz validado
 - [ ] Caso borde validado
+
+## Checklist de gobernanza
+- [ ] Cambio dentro de alcance PRD
+- [ ] Sin secretos en código
 
 ## Riesgos / deuda
