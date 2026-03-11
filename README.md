@@ -1,12 +1,11 @@
 # Zorro Hackatón Base (Monorepo MAUI)
 
-Repositorio base provisto por **Enacment** para los 3 equipos del hackatón:
-- Planogramas
-- Traspasos
-- Precios
+Repositorio base provisto por **Enacment** como **template de arranque** para los equipos del hackatón.
 
 ## Objetivo
-Dar un punto de partida común, escalable y con buenas prácticas enterprise para construir MVPs alineados a PRD usando un stack homogéneo.
+Dar un punto de partida común, escalable y simple para construir MVPs alineados a PRD usando un stack homogéneo.
+
+> Nota de alcance: este repo es plantilla base. Las apps finales por equipo pueden vivir en sus propios repos una vez iniciado el desarrollo.
 
 ## Stack objetivo
 - Frontend/App: **.NET MAUI** (Android y opción Web mediante estrategia por equipo)
@@ -18,9 +17,7 @@ Dar un punto de partida común, escalable y con buenas prácticas enterprise par
 ## Estructura
 ```txt
 apps/
-  Zorro.Planogramas.App/
-  Zorro.Traspasos.App/
-  Zorro.Precios.App/
+  Zorro.Template.App/
 shared/
   Domain.Common/
   Application.Common/
@@ -51,6 +48,11 @@ teams/
 - No ampliar alcance del PRD sin acuerdo explícito.
 - Cada cambio debe compilar o dejar evidencia de bloqueo con owner.
 - Commits pequeños, trazables y con objetivo único.
+
+## Estado de autenticación (actual)
+- Autenticación base del template: simple y embebida en proyecto (login/logout + guard).
+- Integración real de autenticación empresarial: pendiente de conexión vía DLL entregada por equipo Zorro.
+- Detalle de continuidad: `docs/AUTH-CONTINUIDAD.md`.
 
 ## Branching sugerido
 - `main` protegida
