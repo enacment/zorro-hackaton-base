@@ -24,10 +24,20 @@ Objetivo: poder empezar a desarrollar sin sobrecomplicar y sin bloquear por cred
 - Pantalla de Healthcheck (app + API ping)
 
 ## Qué NO incluye aún
-- Integración real con la DLL
+- Integración real con la DLL (método exacto de login pendiente de confirmar)
 - SSO corporativo
 - MFA
 - RBAC completo
+
+## DLL recibidas (consideradas, no versionadas)
+- `ZA98OUT.dll` (descifrado)
+- `ZAIO2206.dll` (acceso/operaciones legacy)
+- archivo de configuración asociado (con IP/credenciales cifradas)
+
+Estas DLL **no se suben al repositorio**. Se deben colocar en entorno local seguro:
+- `local-secrets/dll/ZA98OUT.dll`
+- `local-secrets/dll/ZAIO2206.dll`
+- `local-secrets/dll/ZAIO2206.ini`
 
 ## Pendientes para siguiente checkpoint
 1. Confirmar con Fer:
