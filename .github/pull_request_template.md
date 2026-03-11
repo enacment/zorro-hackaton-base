@@ -5,8 +5,8 @@
 - [ ] Traspasos
 - [ ] Precios
 
-## Referencia PRD (obligatorio)
-- PRD: `prd/<equipo>/PRD.md`
+## Referencia PRD
+- PRD: `prd/<equipo>/PRD.md` (opcional pero recomendado)
 - Sección PRD:
 - Criterio de aceptación PRD cubierto:
 
