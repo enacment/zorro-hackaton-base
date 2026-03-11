@@ -1,5 +1,9 @@
 # Equipo Precios
 
+## Fuente de verdad
+- PRD oficial: `prd/precios/PRD.md`
+- No implementar nada fuera de ese PRD sin cambio explícito.
+
 ## 1) Contexto del equipo
 - Bloque PRD inicial:
 - Caso feliz a construir primero:

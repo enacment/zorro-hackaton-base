@@ -37,17 +37,24 @@ teams/
 
 ## Flujo de trabajo por equipo
 1. Crear fork y rama de trabajo.
-2. Ir a `teams/<equipo>/README.md`.
-3. Completar sección **Contexto del equipo** con su PRD (sin inventar alcance).
-4. Completar sección **Infra y accesos** (deploy, keys, storage, DB, integraciones).
-5. Ejecutar checklist de readiness.
-6. Empezar iteraciones de Vibe Coding.
+2. Cargar/actualizar PRD en `prd/<equipo>/PRD.md`.
+3. Ir a `teams/<equipo>/README.md`.
+4. Completar sección **Contexto del equipo** usando solo PRD (sin inventar alcance).
+5. Completar sección **Infra y accesos** (deploy, keys, storage, DB, integraciones).
+6. Ejecutar checklist de readiness.
+7. Empezar iteraciones de Vibe Coding.
 
 ## Reglas no negociables
 - No subir secretos al repositorio.
 - No ampliar alcance del PRD sin acuerdo explícito.
+- El PRD (`prd/<equipo>/PRD.md`) es la única fuente de verdad.
 - Cada cambio debe compilar o dejar evidencia de bloqueo con owner.
 - Commits pequeños, trazables y con objetivo único.
+
+## Guías de IA
+- Guardrails: `docs/AI-DEVELOPMENT-GUARDRAILS.md`
+- Codex: `playbooks/codex/README.md`
+- Antigravity: `playbooks/antigravity/README.md`
 
 ## Estado de autenticación (actual)
 - Autenticación base del template: simple y embebida en proyecto (login/logout + guard).
