@@ -8,15 +8,14 @@ jobs:
   validate-prd-reference:
     runs-on: ubuntu-latest
     steps:
-      - name: Validate PR body has PRD reference
+      - name: Validate PR body has context PRD reference
         uses: actions/github-script@v7
         with:
           script: |
             const body = (context.payload.pull_request?.body || '').toLowerCase();
 
-            // Expected patterns in PR description
             const patterns = [
-              /prd\/(planogramas|traspasos|precios)\/prd\.md/,
+              /context\/prd\.md/,
               /secci[oó]n\s+prd\s*:/,
               /prd\s*:/
             ];
@@ -25,11 +24,11 @@ jobs:
 
             if (!ok) {
               core.setFailed([
-                '❌ Falta referencia de PRD en la descripción del PR.',
+                '❌ Falta referencia a context/PRD.md en la descripción del PR.',
                 'Incluye al menos:',
-                '- Ruta del PRD (ej: prd/planogramas/PRD.md)',
+                '- Ruta del PRD (ej: context/PRD.md)',
                 '- Sección PRD usada (ej: Sección PRD: 3.2 Criterios de aceptación)'
               ].join('\n'));
             } else {
-              core.info('✅ PR con referencia PRD detectada.');
+              core.info('✅ PR con referencia a context/PRD.md detectada.');
             }

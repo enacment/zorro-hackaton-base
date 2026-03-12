@@ -1,12 +1,7 @@
-# PRDs (única fuente de verdad)
+# Deprecated
 
-Cada equipo debe mantener su PRD aquí.
+Este folder queda solo como histórico.
 
-## Estructura
-- `prd/planogramas/PRD.md`
-- `prd/traspasos/PRD.md`
-- `prd/precios/PRD.md`
-
-## Regla
-No se desarrolla fuera de PRD.
-Cualquier ajuste de alcance se registra como cambio de PRD primero.
+La fuente activa de verdad ahora es:
+- `context/PRD.md`
+- `context/memory.md`

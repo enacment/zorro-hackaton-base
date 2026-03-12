@@ -1,12 +1,7 @@
 ## Resumen
 
-## Proyecto
-- [ ] Planogramas
-- [ ] Traspasos
-- [ ] Precios
-
 ## Referencia PRD
-- PRD: `prd/<equipo>/PRD.md` (opcional pero recomendado)
+- PRD: `context/PRD.md`
 - Sección PRD:
 - Criterio de aceptación PRD cubierto:
 
@@ -20,5 +15,6 @@
 ## Checklist de gobernanza
 - [ ] Cambio dentro de alcance PRD
 - [ ] Sin secretos en código
+- [ ] Discrepancias con prompt resueltas (si aplicaba)
 
 ## Riesgos / deuda

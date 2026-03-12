@@ -12,8 +12,6 @@ Dar un punto de partida común, escalable y simple para construir MVPs alineados
 - Infraestructura: **Azure**
 - AI copiloto: **Codex** y **Google Antigravity**
 
-> Nota: este repo inicia como base estructural. Cada equipo completa su contexto técnico y ejecuta bootstrap en su README.
-
 ## Estructura
 ```txt
 apps/
@@ -23,9 +21,9 @@ shared/
   Application.Common/
   Infrastructure.Common/
 context/
-  planogramas/
-  traspasos/
-  precios/
+  PRD.md
+  memory.md
+  attachments/
 playbooks/
   codex/
   antigravity/
@@ -35,19 +33,19 @@ teams/
   precios/
 ```
 
-## Flujo de trabajo por equipo
+## Flujo de trabajo
 1. Crear fork y rama de trabajo.
-2. Cargar/actualizar PRD en `prd/<equipo>/PRD.md`.
-3. Ir a `teams/<equipo>/README.md`.
-4. Completar sección **Contexto del equipo** usando solo PRD (sin inventar alcance).
-5. Completar sección **Infra y accesos** (deploy, keys, storage, DB, integraciones).
+2. Cargar/actualizar `context/PRD.md`.
+3. Registrar decisiones en `context/memory.md`.
+4. Ejecutar tareas solo dentro del alcance PRD.
+5. Si hay discrepancia con nuevo prompt, avisar y resolver antes de implementar.
 6. Ejecutar checklist de readiness.
 7. Empezar iteraciones de Vibe Coding.
 
 ## Reglas no negociables
 - No subir secretos al repositorio.
 - No ampliar alcance del PRD sin acuerdo explícito.
-- El PRD (`prd/<equipo>/PRD.md`) es la única fuente de verdad.
+- `context/PRD.md` es la única fuente de verdad funcional.
 - Cada cambio debe compilar o dejar evidencia de bloqueo con owner.
 - Commits pequeños, trazables y con objetivo único.
 

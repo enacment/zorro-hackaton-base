@@ -6,18 +6,19 @@
 - Refactors sensibles
 
 ## Regla de oro
-Codex trabaja **siempre** contra un bloque específico del PRD.
+Codex trabaja **siempre** contra un bloque específico de `context/PRD.md`.
 
 ## Checklist antes de pedir código
-- [ ] PRD referenciado (`prd/<equipo>/PRD.md`, sección exacta)
+- [ ] PRD referenciado (`context/PRD.md`, sección exacta)
 - [ ] Alcance y fuera de alcance explícitos
 - [ ] Inputs/salidas definidos
 - [ ] Restricciones técnicas explícitas
 - [ ] Criterio de aceptación verificable
+- [ ] Discrepancias con prompt actual revisadas
 
 ## Formato mínimo del prompt
 ```txt
-Contexto: [equipo + sección PRD]
+Contexto: [sección de context/PRD.md]
 Objetivo: [resultado funcional]
 Restricciones: [stack, seguridad, no-alcance]
 Archivos objetivo: [rutas]
@@ -30,6 +31,7 @@ Validación: [build + caso feliz + borde]
 - Comandos para correr
 - Validación mínima
 - Riesgos/supuestos
+- Nota de discrepancia (si aplica)
 
 ## Calidad obligatoria
 No se acepta resultado sin:

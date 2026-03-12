@@ -2,6 +2,11 @@
 
 Este archivo guía el uso de Antigravity/Gemini dentro del repo.
 
+## Fuente primordial
+Consultar siempre primero:
+- `context/PRD.md`
+- `context/memory.md`
+
 ## Uso recomendado
 - Scaffolding
 - Alternativas de implementación con tradeoffs
@@ -10,11 +15,17 @@ Este archivo guía el uso de Antigravity/Gemini dentro del repo.
 
 ## Límites
 - No decidir arquitectura final solo con Gemini.
-- No definir reglas críticas de negocio fuera de PRD.
+- No definir reglas críticas fuera de PRD.
 - No aprobar cambios sin build/test y revisión humana.
 
+## Manejo de discrepancias
+Si el prompt nuevo contradice `context/PRD.md`:
+- detener implementación,
+- reportar discrepancia al usuario en lenguaje claro,
+- pedir confirmación de cuál fuente prevalece.
+
 ## Prompt mínimo obligatorio
-- Contexto: equipo + sección PRD
+- Contexto: sección de `context/PRD.md`
 - Objetivo: resultado funcional verificable
 - Restricciones: stack, seguridad, no alcance
 - Entrega: archivos/comandos/pruebas/riesgos

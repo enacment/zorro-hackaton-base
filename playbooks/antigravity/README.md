@@ -7,10 +7,10 @@
 - Aceleración táctica en tareas bien delimitadas
 
 ## Regla de oro
-Antigravity también trabaja contra PRD como fuente de verdad.
+Antigravity trabaja contra `context/PRD.md` como fuente de verdad.
 
 ## Checklist antes de usar
-- [ ] PRD referenciado (`prd/<equipo>/PRD.md`)
+- [ ] PRD referenciado (`context/PRD.md`)
 - [ ] Objetivo acotado y verificable
 - [ ] Restricciones y no-alcance claros
 - [ ] Plan de validación definido
@@ -19,7 +19,7 @@ Antigravity también trabaja contra PRD como fuente de verdad.
 - No cerrar decisiones de arquitectura solo con Antigravity.
 - No definir reglas críticas de negocio fuera de PRD.
 - Toda propuesta se valida con build y pruebas mínimas.
-- Si contradice PRD, se descarta.
+- Si contradice PRD, se reporta al usuario y se detiene ejecución.
 
 ## Uso recomendado
 1. Pedir 2-3 alternativas con tradeoffs.
