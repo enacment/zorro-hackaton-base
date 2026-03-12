@@ -23,6 +23,8 @@ shared/
 context/
   PRD.md
   memory.md
+  DECISIONS.md
+  CHANGELOG.md
   attachments/
 playbooks/
   codex/
@@ -36,11 +38,12 @@ teams/
 ## Flujo de trabajo
 1. Crear fork y rama de trabajo.
 2. Cargar/actualizar `context/PRD.md`.
-3. Registrar decisiones en `context/memory.md`.
+3. Registrar decisiones en `context/memory.md` y `context/DECISIONS.md`.
 4. Ejecutar tareas solo dentro del alcance PRD.
 5. Si hay discrepancia con nuevo prompt, avisar y resolver antes de implementar.
-6. Ejecutar checklist de readiness.
-7. Empezar iteraciones de Vibe Coding.
+6. Actualizar `context/CHANGELOG.md` al cerrar cada iteración.
+7. Ejecutar checklist de readiness.
+8. Empezar iteraciones de Vibe Coding.
 
 ## Reglas no negociables
 - No subir secretos al repositorio.

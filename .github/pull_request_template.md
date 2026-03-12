@@ -20,5 +20,6 @@
 - [ ] Cambio dentro de alcance PRD
 - [ ] Sin secretos en código
 - [ ] Discrepancias con prompt resueltas (si aplicaba)
+- [ ] `context/CHANGELOG.md` actualizado
 
 ## Riesgos / deuda
