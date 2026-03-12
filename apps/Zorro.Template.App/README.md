@@ -33,4 +33,12 @@ src/
 4. Validar login + healthcheck + logout.
 
 ## Continuidad
-Para integrar autenticación real revisar: `docs/AUTH-CONTINUIDAD.md`.
+Para integrar autenticación real revisar:
+- `docs/AUTH-CONTINUIDAD.md`
+- `docs/DLL-INTEGRATION.md`
+- `docs/CONTINUACION-DLL.md`
+
+Verificación rápida local:
+```bash
+bash scripts/verify-dll-setup.sh
+```

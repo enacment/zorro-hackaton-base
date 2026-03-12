@@ -15,11 +15,13 @@ Si una solicitud nueva contradice `context/PRD.md`, **no se implementa directo**
 
 ## 2) Flujo obligatorio por tarea
 1. Leer `context/PRD.md` y `context/memory.md`.
-2. Identificar criterio exacto de aceptación.
-3. Definir micro-objetivo verificable (20-50 min).
-4. Implementar cambio mínimo.
-5. Validar (build + caso feliz + caso borde).
-6. Commit pequeño y trazable.
+2. Revisar `context/DECISIONS.md` y `context/CHANGELOG.md` antes de tocar código.
+3. Identificar criterio exacto de aceptación.
+4. Definir micro-objetivo verificable (20-50 min).
+5. Implementar cambio mínimo.
+6. Validar (build + caso feliz + caso borde).
+7. Commit pequeño y trazable.
+8. Registrar entrada en `context/CHANGELOG.md` (obligatorio).
 
 ## 3) Restricciones no negociables
 - No subir secretos, DLLs ni archivos sensibles.

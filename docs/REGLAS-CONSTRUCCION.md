@@ -3,10 +3,12 @@
 ## Contrato operativo
 1. `context/PRD.md` primero.
 2. `context/memory.md` como memoria local.
-3. Cambios pequeños.
-4. Validación técnica mínima.
-5. Evidencia de aceptación.
-6. Trazabilidad en commit/PR.
+3. `context/DECISIONS.md` + `context/CHANGELOG.md` como trazabilidad viva.
+4. Cambios pequeños.
+5. Validación técnica mínima.
+6. Evidencia de aceptación.
+7. Trazabilidad en commit/PR.
+8. Cada PR debe actualizar `context/CHANGELOG.md`.
 
 ## Manejo de discrepancias
 Si el prompt del usuario contradice `context/PRD.md`:
