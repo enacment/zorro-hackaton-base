@@ -53,8 +53,11 @@ teams/
 
 ## Guías de IA
 - Guardrails: `docs/AI-DEVELOPMENT-GUARDRAILS.md`
-- Codex: `playbooks/codex/README.md`
-- Antigravity: `playbooks/antigravity/README.md`
+- Reglas de construcción: `docs/REGLAS-CONSTRUCCION.md`
+- Codex (embebido): `AGENTS.md`
+- Antigravity/Gemini (embebido): `GEMINI.md`
+- Playbook Codex: `playbooks/codex/README.md`
+- Playbook Antigravity: `playbooks/antigravity/README.md`
 
 ## Estado de autenticación (actual)
 - Autenticación base del template: simple y embebida en proyecto (login/logout + guard).
