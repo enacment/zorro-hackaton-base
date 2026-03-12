@@ -1,5 +1,9 @@
 # Equipo Planogramas
 
+## Fuente de verdad
+- PRD oficial: `prd/planogramas/PRD.md`
+- No implementar nada fuera de ese PRD sin cambio explícito.
+
 ## 1) Contexto del equipo (completar antes de codificar)
 - Bloque PRD inicial:
 - Caso feliz a construir primero:

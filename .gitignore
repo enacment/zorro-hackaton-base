@@ -12,6 +12,9 @@ obj/
 .env
 .env.*
 secrets.json
+local-secrets/
+*.dll
+!docs/**/*.dll
 
 # Node (si se usa tooling auxiliar)
 node_modules/

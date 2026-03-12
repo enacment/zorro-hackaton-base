@@ -1,34 +1,29 @@
 # Zorro Hackatón Base (Monorepo MAUI)
 
-Repositorio base provisto por **Enacment** para los 3 equipos del hackatón:
-- Planogramas
-- Traspasos
-- Precios
+Repositorio base provisto por **Enacment** como **template de arranque** para los equipos del hackatón.
 
 ## Objetivo
-Dar un punto de partida común, escalable y con buenas prácticas enterprise para construir MVPs alineados a PRD usando un stack homogéneo.
+Dar un punto de partida común, escalable y simple para construir MVPs alineados a PRD usando un stack homogéneo.
+
+> Nota de alcance: este repo es plantilla base. Las apps finales por equipo pueden vivir en sus propios repos una vez iniciado el desarrollo.
 
 ## Stack objetivo
 - Frontend/App: **.NET MAUI** (Android y opción Web mediante estrategia por equipo)
 - Infraestructura: **Azure**
 - AI copiloto: **Codex** y **Google Antigravity**
 
-> Nota: este repo inicia como base estructural. Cada equipo completa su contexto técnico y ejecuta bootstrap en su README.
-
 ## Estructura
 ```txt
 apps/
-  Zorro.Planogramas.App/
-  Zorro.Traspasos.App/
-  Zorro.Precios.App/
+  Zorro.Template.App/
 shared/
   Domain.Common/
   Application.Common/
   Infrastructure.Common/
 context/
-  planogramas/
-  traspasos/
-  precios/
+  PRD.md
+  memory.md
+  attachments/
 playbooks/
   codex/
   antigravity/
@@ -38,19 +33,34 @@ teams/
   precios/
 ```
 
-## Flujo de trabajo por equipo
+## Flujo de trabajo
 1. Crear fork y rama de trabajo.
-2. Ir a `teams/<equipo>/README.md`.
-3. Completar sección **Contexto del equipo** con su PRD (sin inventar alcance).
-4. Completar sección **Infra y accesos** (deploy, keys, storage, DB, integraciones).
-5. Ejecutar checklist de readiness.
-6. Empezar iteraciones de Vibe Coding.
+2. Cargar/actualizar `context/PRD.md`.
+3. Registrar decisiones en `context/memory.md`.
+4. Ejecutar tareas solo dentro del alcance PRD.
+5. Si hay discrepancia con nuevo prompt, avisar y resolver antes de implementar.
+6. Ejecutar checklist de readiness.
+7. Empezar iteraciones de Vibe Coding.
 
 ## Reglas no negociables
 - No subir secretos al repositorio.
 - No ampliar alcance del PRD sin acuerdo explícito.
+- `context/PRD.md` es la única fuente de verdad funcional.
 - Cada cambio debe compilar o dejar evidencia de bloqueo con owner.
 - Commits pequeños, trazables y con objetivo único.
+
+## Guías de IA
+- Guardrails: `docs/AI-DEVELOPMENT-GUARDRAILS.md`
+- Reglas de construcción: `docs/REGLAS-CONSTRUCCION.md`
+- Codex (embebido): `AGENTS.md`
+- Antigravity/Gemini (embebido): `GEMINI.md`
+- Playbook Codex: `playbooks/codex/README.md`
+- Playbook Antigravity: `playbooks/antigravity/README.md`
+
+## Estado de autenticación (actual)
+- Autenticación base del template: simple y embebida en proyecto (login/logout + guard).
+- Integración real de autenticación empresarial: pendiente de conexión vía DLL entregada por equipo Zorro.
+- Detalle de continuidad: `docs/AUTH-CONTINUIDAD.md`.
 
 ## Branching sugerido
 - `main` protegida
