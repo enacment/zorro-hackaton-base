@@ -5,6 +5,10 @@
 - Sección PRD:
 - Criterio de aceptación PRD cubierto:
 
+## Discrepancia PRD-Prompt
+- Discrepancia PRD-Prompt: No
+- Si marcaste "Sí", explica resolución:
+
 ## Cambios técnicos
 
 ## Evidencia

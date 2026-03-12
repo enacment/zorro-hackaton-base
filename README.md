@@ -59,8 +59,12 @@ teams/
 
 ## Estado de autenticación (actual)
 - Autenticación base del template: simple y embebida en proyecto (login/logout + guard).
-- Integración real de autenticación empresarial: pendiente de conexión vía DLL entregada por equipo Zorro.
-- Detalle de continuidad: `docs/AUTH-CONTINUIDAD.md`.
+- Integración real de autenticación empresarial: preparada vía adapter DLL externo.
+- Guías:
+  - `docs/AUTH-CONTINUIDAD.md`
+  - `docs/DLL-INTEGRATION.md`
+  - `docs/CONTINUACION-DLL.md`
+  - `scripts/verify-dll-setup.sh`
 
 ## Branching sugerido
 - `main` protegida
