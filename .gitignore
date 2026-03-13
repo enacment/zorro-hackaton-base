@@ -1,23 +1,59 @@
-# OS
-.DS_Store
-
-# .NET
+# Build outputs
 bin/
 obj/
-*.user
-*.suo
+
+# Visual Studio
 .vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
-# Secrets
-.env
-.env.*
-secrets.json
+# User-specific files
+*.userprefs
+*.pidb
+*.booproj
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains Rider / IntelliJ
+.idea/
+
+# Vim
+*.swp
+*.swo
+
+# Local secrets / DLL files / sensitive config
 local-secrets/
-*.dll
-!docs/**/*.dll
 
-# Node (si se usa tooling auxiliar)
-node_modules/
+# App settings (keep appsettings.template.json committed)
+appsettings.json
+appsettings.*.json
+!appsettings.template.json
 
-# Logs
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Publish output
+publish/
+
+# MAUI / Xamarin
+*.ipa
+*.apk
+*.aab
+*.dSYM
+*.dSYM.zip
+
+# Test results
+TestResults/
+coverage/
+
+# Misc
 *.log
+Thumbs.db

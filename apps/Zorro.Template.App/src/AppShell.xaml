@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+    x:Class="Zorro.Template.App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:Zorro.Template.App.Pages"
+    Shell.FlyoutBehavior="Disabled">
+
+    <!-- Login route — no tab, entry point for unauthenticated users -->
+    <ShellContent
+        Route="login"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Shell.TabBarIsVisible="False" />
+
+    <!-- Authenticated tab bar -->
+    <TabBar>
+        <ShellContent
+            Title="Dashboard"
+            Route="dashboard"
+            ContentTemplate="{DataTemplate pages:DashboardPage}" />
+        <ShellContent
+            Title="Estado"
+            Route="health"
+            ContentTemplate="{DataTemplate pages:HealthPage}" />
+    </TabBar>
+
+</Shell>

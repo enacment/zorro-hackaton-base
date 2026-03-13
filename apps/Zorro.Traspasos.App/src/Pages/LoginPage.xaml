@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Zorro.Traspasos.App.Pages.LoginPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Iniciar sesión"
+    Shell.NavBarIsVisible="False">
+
+    <VerticalStackLayout
+        Padding="40"
+        Spacing="16"
+        VerticalOptions="Center">
+
+        <Label
+            Text="🦊 Zorro Traspasos"
+            FontSize="32"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="#3BB54A" />
+
+        <Label
+            Text="Inicia sesión para continuar"
+            FontSize="14"
+            HorizontalOptions="Center"
+            TextColor="Gray" />
+
+        <Entry x:Name="UsernameEntry" Placeholder="Usuario" Keyboard="Text" ReturnType="Next" />
+        <Entry x:Name="PasswordEntry" Placeholder="Contraseña" IsPassword="True" ReturnType="Done" />
+
+        <Label x:Name="ErrorLabel" TextColor="Red" IsVisible="False" HorizontalOptions="Center" />
+
+        <Button
+            x:Name="LoginButton"
+            Text="Entrar"
+            BackgroundColor="#3BB54A"
+            TextColor="White"
+            CornerRadius="8"
+            Clicked="OnLoginClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

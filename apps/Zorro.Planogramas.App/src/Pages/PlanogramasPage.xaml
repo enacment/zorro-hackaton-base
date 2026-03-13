@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Zorro.Planogramas.App.Pages.PlanogramasPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Planogramas">
+
+    <VerticalStackLayout
+        Padding="24"
+        Spacing="16"
+        VerticalOptions="Start">
+
+        <Label
+            Text="Sprint 1 — Planogramas"
+            FontSize="24"
+            FontAttributes="Bold" />
+
+        <Label
+            Text="Este es tu espacio de trabajo. Lee el PRD en context/PRD.md y empieza a construir."
+            FontSize="14"
+            TextColor="Gray" />
+
+        <BoxView HeightRequest="1" BackgroundColor="#E0E0E0" Margin="0,8" />
+
+        <Button
+            Text="Cerrar sesión"
+            BackgroundColor="#E53935"
+            TextColor="White"
+            CornerRadius="8"
+            HorizontalOptions="Start"
+            Clicked="OnLogoutClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
