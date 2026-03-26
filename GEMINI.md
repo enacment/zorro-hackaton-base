@@ -6,6 +6,8 @@ Este archivo guía el uso de Antigravity/Gemini dentro del repo.
 Consultar siempre primero:
 - `context/PRD.md`
 - `context/memory.md`
+- `context/DECISIONS.md`
+- `context/CHANGELOG.md`
 
 ## Uso recomendado
 - Scaffolding

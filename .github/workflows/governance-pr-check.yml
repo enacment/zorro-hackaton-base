@@ -1,0 +1,31 @@
+name: Governance PR Check
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  governance-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate governance fields in PR body
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = (context.payload.pull_request?.body || '');
+            const lower = body.toLowerCase();
+
+            const checks = [
+              { ok: /context\/prd\.md/.test(lower), msg: 'Debe referenciar context/PRD.md' },
+              { ok: /\[x\]\s*build\s*ok/i.test(body), msg: 'Debe marcar [x] Build OK' },
+              { ok: /\[x\]\s*caso feliz validado/i.test(body), msg: 'Debe marcar [x] Caso feliz validado' },
+              { ok: /\[x\]\s*caso borde validado/i.test(body), msg: 'Debe marcar [x] Caso borde validado' },
+              { ok: /discrepancia\s*prd\s*[-–]?\s*prompt\s*:\s*(si|sí|no)/i.test(body), msg: 'Debe declarar Discrepancia PRD-Prompt: Sí/No' }
+            ];
+
+            const failed = checks.filter(c => !c.ok).map(c => `- ${c.msg}`);
+            if (failed.length) {
+              core.setFailed(['❌ Faltan campos obligatorios de gobernanza en el PR:', ...failed].join('\n'));
+            } else {
+              core.info('✅ Governance PR check passed.');
+            }

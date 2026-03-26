@@ -32,12 +32,17 @@ Objetivo: poder empezar a desarrollar sin sobrecomplicar y sin bloquear por cred
 ## DLL recibidas (consideradas, no versionadas)
 - `ZA98OUT.dll` (descifrado)
 - `ZAIO2206.dll` (acceso/operaciones legacy)
-- archivo de configuración asociado (con IP/credenciales cifradas)
+- archivo de configuración asociado
 
 Estas DLL **no se suben al repositorio**. Se deben colocar en entorno local seguro:
 - `local-secrets/dll/ZA98OUT.dll`
 - `local-secrets/dll/ZAIO2206.dll`
 - `local-secrets/dll/ZAIO2206.ini`
+
+Ver guía operativa en:
+- `docs/DLL-INTEGRATION.md`
+- `docs/CONTINUACION-DLL.md`
+- `scripts/verify-dll-setup.sh`
 
 ## Pendientes para siguiente checkpoint
 1. Confirmar con Fer:
